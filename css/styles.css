@@ -1,0 +1,109 @@
+
+/* basics */
+
+@font-face{
+  font-family: 'FreightBlack';
+  src: url('fonts/PatronWEB-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/PatronWEB-Light.woff') format('woff'), url('fonts/PatronWEB-Light.ttf')  format('truetype'), url('fonts/PatronWEB-Light.svg#Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-margin-before:0px;
+  -webkit-margin-end:0px;
+  -webkit-margin-after:0px;
+  -webkit-margin-start:0px;
+
+  -webkit-padding-before:0px;
+  -webkit-padding-end:0px;
+  -webkit-padding-after:0px;
+  -webkit-padding-start:0px;
+}
+
+html, body{
+  margin  : 0;
+  padding : 0;
+  color   : #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html{
+  height: 100%;
+}
+
+
+/* fonts */
+
+
+.proxima-h1, .proxima-h2{
+  font-family: proximanovabold
+}
+
+.proxima-h1{
+  font-size: 140pt;
+}
+
+.proxima-h2{
+  font-size: 60pt;
+}
+
+.proxima-h3{
+  font-size: 140pt;
+  font-family:proximanovasemibold;
+}
+
+.proxima-h4{
+  font-size: 140pt;
+  font-family:proximanovasemiregular;
+}
+
+.freight-h1{
+  font-family: freightblack;
+  font-size:50pt;
+}
+
+.freight-h2{
+  font-family: freightblack;
+  font-size:25pt;
+}
+
+
+/* general styles and helpers */
+
+
+.red{
+	background-color: red;
+}
+.black{
+  background-color: black;
+}
+
+.wrapper{
+	margin: 40px 0 0 0;
+}
+
+.sidepad{
+	padding: 0 40px 0 40px;
+}
+
+/* bootstrap hacks and fixes */ 
+
+.row{
+	margin: 0 0 0 0;
+}
+
+
+
+
+/*header*/
+
+.header{
+	height:60em;
+}
