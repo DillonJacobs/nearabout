@@ -8,7 +8,24 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face{
+  font-family: 'ProximaBold';
+  src: url(../fonts/Proxima-Nova-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'ProximaRegular';
+  src: url(../fonts/Proxima-Nova-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'ProximaSemibold';
+  src: url(../fonts/Proxima-Nova-Semibold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -43,11 +60,11 @@ html{
 
 
 .proxima-h1, .proxima-h2{
-  font-family: proximanovabold
+  font-family: ProximaBold;
 }
 
 .proxima-h1{
-  font-size: 140pt;
+  font-size: 16vw;
 }
 
 .proxima-h2{
@@ -55,13 +72,13 @@ html{
 }
 
 .proxima-h3{
-  font-size: 140pt;
-  font-family:proximanovasemibold;
+  font-size: 15pt;
+  font-family:ProximaSemibold;
 }
 
 .proxima-h4{
-  font-size: 140pt;
-  font-family:proximanovasemiregular;
+  font-size: 10pt;
+  font-family:ProximaRegular;
 }
 
 .freight-h1{
@@ -81,29 +98,221 @@ html{
 .red{
 	background-color: red;
 }
+
 .black{
   background-color: black;
 }
 
+.white{
+  background-color: white;
+}
+
+.whitetext{
+  color:white;
+}
+
 .wrapper{
 	margin: 40px 0 0 0;
+  padding: 0 40px 0 40px;
 }
 
 .sidepad{
 	padding: 0 40px 0 40px;
 }
 
-/* bootstrap hacks and fixes */ 
+.absolute{
+  position: absolute;
+}
+
+.vcenter{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vcenteroffset{
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.vcenteroffset2{
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.clear{
+  clear:both;
+}
+.border{
+  border-style: solid;
+  border-color:white;
+  border-width:20px;
+}
+
+.frame{
+  height:100vh;
+  width:100%;
+  border-width:40px /*60px 60px 40px*/;
+  border-color:white;
+  border-style: solid;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+}
+
+/* bootstrap fixes/changes */ 
+
 
 .row{
 	margin: 0 0 0 0;
 }
 
 
+/* menu */ 
 
 
-/*header*/
+.nearabout-logo{
+  width:150px;
+  height:auto;
+  display: block;
+
+}
+.menu-row{
+  margin-left:60px;
+  margin-top:20px;
+  position: fixed;
+  z-index:1000000;
+}
+
+ul.menu{
+  margin-top:20px;
+}
+
+ul.menu li{
+  list-style: none;
+  color:white;
+}
+
+ul.menu li a{
+  color:white;
+}
+.swap{
+  color:white;
+}
+
+
+/* header */
+
 
 .header{
-	height:60em;
+	height:90vh;
 }
+
+.header-content{
+  height:90vh;
+  width:100%;
+  position: relative;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background-color: orange;
+}
+
+.headslide{
+  height:90vh;
+  width:30vw;
+  position: absolute;
+  right:-32vw;
+  z-index: 10;
+  background-color: black;
+  padding: 30vh 50px 0 50px;
+}
+
+
+/*homepage work section*/
+
+
+.work-button{
+  height:30vw;
+  padding:20px;
+  background-clip: content-box;
+}
+
+.work-row{
+  background-color: #EFEEEE;
+  padding: 0px 20px 40px 20px;
+  margin: 100px 0 0 0;
+  height:;
+}
+
+.work-row-text{
+  top:-50px;
+  position: relative;
+}
+
+.view-work-button{
+  max-width:200px;
+  height:80px;
+  float:none;
+  bottom:-75px;
+}
+
+
+/* what we do section */
+
+.what-we-do{
+  margin-top:150px;
+}
+.what-we-do-text{
+  top:-65px;
+  position: relative;
+}
+.services-pic{
+  width:100%;
+  height:800px;
+  background-color: black;
+}
+.services-container{
+  background-color: #FABEAB;
+  padding: 10px 60px 40px 60px
+}
+.service{
+  margin: 0 0 50px 0;
+}
+
+
+/* footer */
+
+footer{
+  height:100px;
+  padding:25px 0 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

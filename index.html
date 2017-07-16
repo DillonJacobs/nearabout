@@ -10,32 +10,241 @@
   <meta name="author" content="Dillon Jacobson & Maty Veitas">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">    
+  <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/ScrollMagic.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="js/scripts.js"></script>   
+  <script type="text/javascript" src="js/animation.gsap.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 <style>
-.headslide{
-  height:400px;
-  width:400px;
-  position: absolute;
-}
+
+  #trigger1{
+    height:500px;
+  }
+
+  .hack{
+  }
+
+  .trigger{
+    height:50px;
+    width:100px;
+    top:51vh;
+    position: relative;
+    float:left;
+  }
+
+  .header-text{
+    width:100%;
+    position: absolute;
+    text-align: center;
+    float:left;
+  }
+
 </style>
 </head>
 <body>
-
-<div class="wrapper sidepad">
-  <div class="row header red">
-    <div class="col-xs-12 red">
-    <div class="headslide black">
-      
-    </div>
-      
-    </div>
-  </div>
+<div class="frame"></div>
+<div class="menu-row">
+  <img class="nearabout-logo" src="img/nearabout-logo.svg" alt="">
+  <ul class="menu">
+    <li class="proxima-h4 swap"><a href="index.html">Home</a></li>
+    <li class="proxima-h4"><a href="work.html">Work</a></li>
+    <li class="proxima-h4"><a href="about.html">About</a></li>
+    <li class="proxima-h4"><a href="contact.html">Contact</a></li>
+  </ul>
 </div>
-<script src="js/jquery-1.12.0.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-<script src="js/scripts.js"></script>
+  <div id="trigger1" class="trigger"></div>
+  <div id="pin1" class="wrapper sidepad">
+    <div class="row header red">
+    <div class="header-content">
+    <div class="proxima-h1 header-text vcenter">Hello!</div>
+    <div class="proxima-h3 header-text vcenteroffset">We make stuff. Take a look.</div>
+      <div class="headslide black">
+      <div class="vcenteroffset2">
+        <div class="whitetext freight-h2">We're Nearabout</div>
+        <div class="whitetext proxima-h3">A fun, super cool deisgn firm that wants to make money so we don't have to deliver sandwiches to yuppies in the Finance District in San Francisco.</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="trigger3"></div>
+    <div class="row work-row center-block">
+      <div class="freight-h1 text-center work-row-text">Recent Work</div>
+      <div class="col-xs-12 col-md-4 red work-button"></div>
+      <div class="col-xs-12 col-md-4 red work-button"></div>
+      <div class="col-xs-12 col-md-4 red work-button"></div>
+      <div class="col-xs-12 red center-block view-work-button clear">
+        <div class="proxima-h4 text-center vcenter">View our work -></div>
+      </div>
+    </div>
+    <div class="row what-we-do centerblock red">
+      <div class="col-xs-12 services-pic"></div>
+      <div class="col-xs-12 services-container">
+        <div class="freight-h1 text-center whitetext what-we-do-text">What we do</div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-6 col-md-4 service">
+          <div class="freight-h2">Illustration</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+      </div>
+    </div>
+    <footer class="row">
+      <div class="col-xs-6">
+        <div class="proxima-h4">425-591-5017</div>
+        <div class="proxima-h4">hello@nearabout.com</div>
+        <div class=""></div>
+      </div>
+      <div class="col-xs-6">
+        <div class="proxima-h4 pull-right">c) nearabout 2017</div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+  </script>
+    <section class="demo">
+      <script>
+      // var mq = window.matchMedia( "(min-width: 570px)" );
+
+      // if (mq.matches) {
+         
+           
+      //        var scene = new ScrollMagic.Scene({
+      //                  triggerElement: "#trigger1"
+      //                })
+      //                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
+      //                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      //                .addTo(controller);
+
+      //        var scene = new ScrollMagic.Scene({
+      //                  triggerElement: "#trigger1"
+      //                })
+      //                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"20%"}) // trigger a TweenMax.to tween
+      //                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      //                .addTo(controller);
+             
+           
+      //        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+      //                .setPin("#pin1")
+      //                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+      //                .addTo(controller);
+
+
+
+           
+      // }
+      // else {
+          
+            
+      //         var scene = new ScrollMagic.Scene({
+      //                   triggerElement: "#trigger1"
+      //                 })
+      //                 .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
+      //                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      //                 .addTo(controller);
+
+      //         var scene = new ScrollMagic.Scene({
+      //                   triggerElement: "#trigger1"
+      //                 })
+      //                 .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
+      //                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      //                 .addTo(controller);
+              
+            
+      //         var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+      //                 .setPin("#pin1")
+      //                 // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+      //                 .addTo(controller);
+
+
+
+            
+      // }
+
+      if (window.matchMedia("(min-width: 600px)").matches) {
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+        
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                .setPin("#pin1")
+                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      } else {
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+        
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                .setPin("#pin1")
+                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      }
+      </script>
+
+      <script>
+        
+        $(function () {
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger3"
+                })
+                .setTween(".swap a", 1, {color:'#000'}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+                });
+      </script>
+
+    </section>
+
+
+
 </body>
 </html>

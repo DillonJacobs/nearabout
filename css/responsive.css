@@ -1,0 +1,87 @@
+
+
+
+@media (max-width: 800px) {
+  /* basics */
+
+
+  /* fonts */
+
+
+  .proxima-h1{
+    font-size: 60pt;
+  }
+
+
+  /* general styles and helpers */
+
+
+  .wrapper{
+    margin: 20px 0 0 0;
+    padding: 0 20px 0 20px;
+  }
+
+  .frame{
+    height:100vh;
+    width:100%;
+    border-width:20px /*60px 60px 40px*/;
+    border-color:white;
+    border-style: solid;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+  }
+
+  /* bootstrap fixes/changes */ 
+
+
+
+  /* menu */ 
+
+
+
+
+  /* header */
+
+  .headslide{
+    height:90vh;
+    width:30vw;
+    position: absolute;
+    right:-32vw;
+    z-index: 10;
+    background-color: black;
+    padding: 20vh 20px 0 20px;
+  }
+
+
+  /*homepage work section*/
+
+
+
+  /* footer */
+}
+
+
+/* mobile styles for header animation */
+
+
+@media (max-width: 600px) {
+
+  .headslide{
+    height:30vh;
+    width:100vw;
+    position: absolute;
+    bottom:-32vw;
+    right:0;
+    left:0;
+    z-index: 10;
+    background-color: black;
+    padding: 30vh 50px 0 50px;
+  }
+}
+
+
+
