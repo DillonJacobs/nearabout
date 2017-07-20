@@ -3,8 +3,7 @@
 
 @font-face{
   font-family: 'FreightBlack';
-  src: url('fonts/PatronWEB-Light.eot?#iefix') format('embedded-opentype'),
-       url('fonts/PatronWEB-Light.woff') format('woff'), url('fonts/PatronWEB-Light.ttf')  format('truetype'), url('fonts/PatronWEB-Light.svg#Font') format('svg');
+  src: url(../fonts/Freight-Disp-Bold-Italic.otf);
   font-weight: normal;
   font-style: normal;
 }
@@ -82,12 +81,12 @@ html{
 }
 
 .freight-h1{
-  font-family: freightblack;
+  font-family: FreightBlack;
   font-size:50pt;
 }
 
 .freight-h2{
-  font-family: freightblack;
+  font-family: FreightBlack;
   font-size:25pt;
 }
 
@@ -170,6 +169,13 @@ html{
 
 .row{
 	margin: 0 0 0 0;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+a:hover{
+  color:black;
 }
 
 
@@ -295,6 +301,33 @@ footer{
   padding:25px 0 25px 0;
 }
 
+/*404 page*/
+.wrap404{
+  background-color: #FABEAB;
+  border-radius: 250px;
+  height:95vh;
+  margin-top:2.5vh;
+  width:95vw;
+}
+.button404{
+  border: 1px;
+  border-color:black;
+  border-style:solid;
+  width:80px;
+  height:30px;
+  box-sizing: content-box;
+}
+.button-text{
+  line-height:30px;
+}
+.tear-drop{
+  width:20px;
+  position: relative;
+  left:60%;
+}
+.forehead{
+  margin-bottom:70px;
+}
 
 
 
