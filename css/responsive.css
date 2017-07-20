@@ -47,7 +47,7 @@
   /* header */
 
   .headslide{
-    height:90vh;
+    height:90vh!important;
     width:30vw;
     position: absolute;
     right:-32vw;
@@ -68,18 +68,21 @@
 /* mobile styles for header animation */
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .headslide{
-    height:30vh;
+    height:47vh;
     width:100vw;
     position: absolute;
-    bottom:-32vw;
+    bottom:-500px;
     right:0;
     left:0;
     z-index: 10;
     background-color: black;
-    padding: 30vh 50px 0 50px;
+    padding: 12vh 50px 0 50px;
+  }
+  .header-text{
+    width:100%!important;
   }
 }
 

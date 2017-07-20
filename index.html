@@ -63,9 +63,9 @@
   <div id="pin1" class="wrapper sidepad">
     <div class="row header red">
     <div class="header-content">
-    <div class="proxima-h1 header-text vcenter">Hello!</div>
-    <div class="proxima-h3 header-text vcenteroffset">We make stuff. Take a look.</div>
-      <div class="headslide black">
+    <div class="proxima-h1 header-text header-text2 vcenter">Hello!</div>
+    <div class="proxima-h3 header-text header-text2 vcenteroffset">We make stuff. Take a look.</div>
+      <div class="headslide headslide2 black">
       <div class="vcenteroffset2">
         <div class="whitetext freight-h2">We're Nearabout</div>
         <div class="whitetext proxima-h3">A fun, super cool deisgn firm that wants to make money so we don't have to deliver sandwiches to yuppies in the Finance District in San Francisco.</div>
@@ -129,108 +129,59 @@
     var controller = new ScrollMagic.Controller();
   </script>
     <section class="demo">
-      <script>
-      // var mq = window.matchMedia( "(min-width: 570px)" );
+<!--       <script>
+      $( document ).ready(function() {
+       $(window).resize(function() {
+        alert("Hello! I am an alert box!!");
+          var pageWidth = $(window).width(); 
+          alert("Hello! I am an alert box!!");
 
-      // if (mq.matches) {
-         
-           
-      //        var scene = new ScrollMagic.Scene({
-      //                  triggerElement: "#trigger1"
-      //                })
-      //                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
-      //                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-      //                .addTo(controller);
+          if( $(window).width()< 681){
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
 
-      //        var scene = new ScrollMagic.Scene({
-      //                  triggerElement: "#trigger1"
-      //                })
-      //                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"20%"}) // trigger a TweenMax.to tween
-      //                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-      //                .addTo(controller);
-             
-           
-      //        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-      //                .setPin("#pin1")
-      //                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-      //                .addTo(controller);
-
-
-
-           
-      // }
-      // else {
-          
-            
-      //         var scene = new ScrollMagic.Scene({
-      //                   triggerElement: "#trigger1"
-      //                 })
-      //                 .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
-      //                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-      //                 .addTo(controller);
-
-      //         var scene = new ScrollMagic.Scene({
-      //                   triggerElement: "#trigger1"
-      //                 })
-      //                 .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
-      //                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-      //                 .addTo(controller);
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
               
-            
-      //         var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-      //                 .setPin("#pin1")
-      //                 // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-      //                 .addTo(controller);
+              
+              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                      .setPin("#pin1")
+                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+          } else {
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
 
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+              
+              
+              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                      .setPin("#pin1")
+                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+            }
+        });
+      });
+      </script> -->
 
-
-            
-      // }
-
-      if (window.matchMedia("(min-width: 600px)").matches) {
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-        
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                .setPin("#pin1")
-                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                .addTo(controller);
-      } else {
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-        
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                .setPin("#pin1")
-                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                .addTo(controller);
-      }
-      </script>
-
-      <script>
+<!--       <script>
         
         $(function () {
         var scene = new ScrollMagic.Scene({
@@ -240,8 +191,113 @@
                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
                 .addTo(controller);
                 });
-      </script>
+      </script> -->
+<script>
+  $(document).ready(function(){            
 
+      $(window).on('resize', function(){ 
+
+         var vpwidth=$(window).width(); // get the new value after resize
+         if(vpwidth > 768) {
+                var scene = new ScrollMagic.Scene({
+                          triggerElement: "#trigger1"
+                        })
+                        .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0, bottom:0}) // trigger a TweenMax.to tween
+                        // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                        .addTo(controller);
+
+                var scene = new ScrollMagic.Scene({
+                          triggerElement: "#trigger1"
+                        })
+                        .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"auto"}) // trigger a TweenMax.to tween
+                        // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                        .addTo(controller);
+                
+                
+                var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                        .setPin("#pin1")
+                        // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                        .addTo(controller);
+
+
+          } else if (vpwidth < 768) {
+
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+
+              var scene = new ScrollMagic.Scene({
+                        triggerElement: "#trigger1"
+                      })
+                      .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
+                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+              
+              
+              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                      .setPin("#pin1")
+                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                      .addTo(controller);
+          }
+
+      }).resize();
+
+  });
+</script>
+<!-- <script>
+  var mediaQuery = window.matchMedia("(max-width: 768px)");
+  mediaQuery.addListener(setAnimation);
+
+  // First run
+  setAnimation(mediaQuery);
+
+  function setAnimation(mediaQuery) {
+    if (mediaQuery.matches) {
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0, bottom:0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+
+        var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1"
+                })
+                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"auto"}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+        
+        
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                .setPin("#pin1")
+                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                .addTo(controller);
+    } else {
+          var scene = new ScrollMagic.Scene({
+                    triggerElement: "#trigger1"
+                  })
+                  .setTween(".headslide2", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
+                  // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+
+          var scene = new ScrollMagic.Scene({
+                    triggerElement: "#trigger1"
+                  })
+                  .setTween(".header-text2", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
+                  // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+          
+          
+          var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+                  .setPin("#pin1")
+                  // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+    }
+  }
+</script> -->
     </section>
 
 
