@@ -94,6 +94,31 @@ html{
 /* general styles and helpers */
 
 
+
+.thingiverse-accent{
+  color:#E87C36;
+}
+
+.jid-accent{
+  color:#7EA9AF;
+}
+
+.jetcity-accent{
+  color:#92B259;
+}
+
+.pshg-accent{
+  color:#004363 ;
+}
+
+.tastemaker-accent{
+  color:#DB3E1F;
+}
+
+.tavern12-accent{
+  color:#892C24;
+}
+
 .red{
 	background-color: red;
 }
@@ -105,7 +130,9 @@ html{
 .white{
   background-color: white;
 }
-
+.pink-text{
+  color:#FABEAB;
+}
 .whitetext{
   color:white;
 }
@@ -144,6 +171,7 @@ html{
 .clear{
   clear:both;
 }
+
 .border{
   border-style: solid;
   border-color:white;
@@ -163,6 +191,8 @@ html{
   right:0;
   z-index: 1000;
 }
+
+
 
 /* bootstrap fixes/changes */ 
 
@@ -186,8 +216,8 @@ a:hover{
   width:150px;
   height:auto;
   display: block;
-
 }
+
 .menu-row{
   margin-left:60px;
   margin-top:20px;
@@ -207,6 +237,7 @@ ul.menu li{
 ul.menu li a{
   color:white;
 }
+
 .swap{
   color:white;
 }
@@ -276,19 +307,23 @@ ul.menu li a{
 .what-we-do{
   margin-top:150px;
 }
+
 .what-we-do-text{
   top:-65px;
   position: relative;
 }
+
 .services-pic{
   width:100%;
   height:800px;
   background-color: black;
 }
+
 .services-container{
   background-color: #FABEAB;
   padding: 10px 60px 40px 60px
 }
+
 .service{
   margin: 0 0 50px 0;
 }
@@ -296,12 +331,16 @@ ul.menu li a{
 
 /* footer */
 
+
 footer{
   height:100px;
   padding:25px 0 25px 0;
 }
 
+
 /*404 page*/
+
+
 .wrap404{
   background-color: #FABEAB;
   border-radius: 250px;
@@ -309,6 +348,7 @@ footer{
   margin-top:2.5vh;
   width:95vw;
 }
+
 .button404{
   border: 1px;
   border-color:black;
@@ -317,17 +357,78 @@ footer{
   height:30px;
   box-sizing: content-box;
 }
+
 .button-text{
   line-height:30px;
 }
+
 .tear-drop{
   width:20px;
   position: relative;
   left:60%;
 }
+
 .forehead{
   margin-bottom:70px;
 }
+
+
+
+/* About us page */
+
+.about-header{
+  height:90vh;
+  width:100%;
+}
+.about-us-row{
+  margin-top:80px;
+}
+.about-us{
+  min-height:400px;
+  padding:80px 30px 30px 80px;
+  top:-500px;
+}
+
+.studio-pic{
+  height:600px;
+}
+
+.bio{
+  height:25vw;
+  background-color: red;
+  padding:0 30px 0 30px;
+  background-clip: -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+}
+
+.bio-hover{
+  height:100%;
+  width:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: black;
+  opacity:0;
+  padding:50px;
+}
+
+.bio:hover .bio-hover{
+  opacity: 1;
+}
+
+.meet-the-crew-row{
+  background-color: #F2F2F2;
+  padding-top:80px;
+  padding-bottom: 80px;
+}
+.meet-the-crew-text{
+  bottom:-45px;
+  position: relative;
+}
+
+
 
 
 
