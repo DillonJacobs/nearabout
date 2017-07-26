@@ -380,11 +380,25 @@ footer{
   height:90vh;
   width:100%;
 }
+
+.about-ticker{
+  width:100%;
+  margin-top:80px;
+  padding-right: 0px!important;
+  padding-left:0px!important;
+  margin-left: 0px!important;
+  margin-right:0px!important;
+  background-color: #FABEAB;
+  height: 30px;
+  border-right: 0px!important;
+  border-left:0px!important;
+}
+
 .about-us-row{
   margin-top:80px;
 }
 .about-us{
-  min-height:400px;
+  height:400px;
   padding:80px 30px 30px 80px;
   top:-500px;
 }
