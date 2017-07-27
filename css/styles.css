@@ -444,8 +444,16 @@ footer{
 
 
 
+/* Work page */
 
+.work-header{
+  height:90vh;
+  width:100%;
+}
 
+.work-header-text2 {
+  top:200%;
+}
 
 
 
