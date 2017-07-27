@@ -58,7 +58,7 @@ html{
 /* fonts */
 
 
-.proxima-h1, .proxima-h2{
+.proxima-h1, .proxima-h2, .proxima-h2_1{
   font-family: ProximaBold;
 }
 
@@ -68,6 +68,9 @@ html{
 
 .proxima-h2{
   font-size: 60pt;
+}
+.proxima-h2_1{
+  font-size: 45pt;
 }
 
 .proxima-h3{
@@ -191,6 +194,15 @@ html{
   right:0;
   z-index: 1000;
 }
+.width100{
+  width:100%;
+}
+.width80{
+  width:80%;
+}
+.height{
+  height:175px;
+}
 
 
 
@@ -206,6 +218,10 @@ a{
 }
 a:hover{
   color:black;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  padding-left:0px;
+  padding-right:0px;
 }
 
 
@@ -427,6 +443,28 @@ footer{
   bottom:-45px;
   position: relative;
 }
+
+/* Work Pages */
+  /* thingiverse */
+  .thingiverse-header{
+     background-image: url("../img/thingiverse/header-image.png");
+     -webkit-background-size: cover;
+     background-size: cover;
+     height:600px;
+  }
+  .work-subhead{
+    max-width:900px;
+  }
+  .service-subhead{
+    margin: 20px 0 20px 0;
+  }
+  .mockup-row{
+    margin-top:80px;
+    margin-bottom:80px;
+  }
+  .thingiverse-mockups{
+    width:80%;
+  }
 
 
 
