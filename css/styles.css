@@ -459,25 +459,44 @@ footer{
 }
 
 /* Work Pages */
+
+
+.visit-link{
+  margin:50px 0 50px 0;
+}
+
+
   /* thingiverse */
+
+
   .thingiverse-header{
      background-image: url("../img/thingiverse/header-image.png");
      -webkit-background-size: cover;
      background-size: cover;
-     height:600px;
+     height:49vh;
+     max-height:600px;
   }
+
   .work-subhead{
     max-width:900px;
   }
+
   .service-subhead{
     margin: 20px 0 20px 0;
   }
+
   .mockup-row{
-    margin-top:80px;
-    margin-bottom:80px;
+    margin-top:100px;
+    margin-bottom:100px;
   }
+
   .thingiverse-mockups{
     width:80%;
+  }
+
+  .colorscheme-row{
+    margin-top:120px;
+    margin-bottom: 120px;
   }
 
 
