@@ -1,4 +1,4 @@
-
+ 
 /* basics */
 
 @font-face{
@@ -494,15 +494,24 @@ footer{
     width:80%;
   }
 
+
   .colorscheme-row{
     margin-top:120px;
     margin-bottom: 120px;
   }
 
 
+/* Work page */
 
 
+.work-header{
+  height:90vh;
+  width:100%;
+}
 
+.work-header-text2 {
+  top:200%;
+}
 
 
 
