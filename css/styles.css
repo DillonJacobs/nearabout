@@ -471,6 +471,26 @@ footer{
   position: relative;
 }
 
+/* Menu */
+
+.popup-container{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position: fixed;
+  background-color: pink;
+  z-index:100;
+}
+#popup1close{
+  float:right;
+}
+.menu-bottom{
+  position: fixed;
+  bottom:150px;
+}
+
+
 /* Work Pages */
 
 
