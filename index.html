@@ -19,6 +19,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="js/scripts.js"></script>   
+  <script src="js/scripts2.js"></script> 
   <script type="text/javascript" src="js/animation.gsap.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -35,7 +36,7 @@
   .trigger{
     height:50px;
     width:100px;
-    top:51vh;
+    top:55vh;
     position: relative;
     float:left;
   }
@@ -44,71 +45,180 @@
     width:100%;
     position: absolute;
     text-align: center;
-    float:left;
+    height:13vw!important;
   }
+  .subheader-text{
+    width:100%;
+    position: absolute;
+    text-align: center;
+    bottom:-50px;
+    display: block;
+  }
+  body{
+    font-sze:14px;
+  }
+
+  .container{
+   max-width:960px;
+    margin:0 auto;
+  }
+  .header-span{
+    height:13vw;
+  }
+.mar-left-80{
+  padding-left:80px;
+}
+   
+
 
 </style>
 </head>
-<body>
+<body class="pink-select loading">
 <div class="menu-row">
-  <a href="index.html"><img class="nearabout-logo" src="img/nearabout-logo.svg" alt=""></a>
+  <a href="index.html">
+  <img class="nearabout-logo" src="img/nearabout-logo.svg" alt="">
+  </a>
+
+
+ 
   <ul class="menu">
-    <li class="proxima-h4 swap"><a href="index.html">Home</a></li>
-    <li class="proxima-h4"><a href="work.html">Work</a></li>
-    <li class="proxima-h4"><a href="about.html">About</a></li>
-    <li class="proxima-h4"><a href="contact.html">Contact</a></li>
+    <li class="proxima-h4 swap">
+    <a href="index.html">Home</a>
+    </li>
+    <li class="proxima-h4">
+    <a href="work.html">Work</a>
+    </li>
+    <li class="proxima-h4">
+    <a href="about.html">About</a>
+    </li>
+    <li class="proxima-h4">
+    <a href="contact.html">Contact</a>
+    </li>
   </ul>
+</div>
+<div id="nav-icon4">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div class="popup-container" id="popup1">
+  <div class="popup-wrapper pop-up-button">
+    <div class="popup-content vcenter">
+      <a href="index.html">
+        <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Home</h1>
+      </a>
+      <a href="work.html">
+        <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="work-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type="">&nbsp;&nbsp;</span>Work</h1>
+      </a>
+      <a id="popup2close" href="about.html">
+        <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;About</h1>
+      </a>
+      <a href="contact.html">
+        <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Contact</h1>
+      </a>
+    </div>
+  </div>
+  <div class="vr center-block"></div>
+  <div class="row menu-bottom ">
+    <div class="col-xs-6 bottom-col vcenter height black border-right">
+      <div class="freight-h3 whitetext">We're listening to</div>
+      <div class="proxima-h4 whitetext">Slob On My Knob<br>by Tear da Club Up Thugs</div>
+    </div>
+    <div class="col-xs-6 bottom-col vcenter height black border-left">
+      <div class="freight-h3 whitetext">Did you know</div>
+      <div class="proxima-h4 whitetext">Banannas are berries</div>
+    </div>
+  </div>
 </div>
   <div id="trigger1" class="trigger"></div>
   <div id="pin1" class="wrapper sidepad">
     <div class="row header red">
     <div class="header-content">
-    <div class="proxima-h1 header-text header-text2 vcenter">Hello!</div>
-    <div class="proxima-h3 header-text header-text2 vcenteroffset">We make stuff. Take a look.</div>
+
+    <span class="header-span vcenter center-block">
+      <div class="proxima-h1 header-text header-text2 vcenter whitetext">Hello!</div>
+      <div class="proxima-h3 subheader-text header-text2 center-block whitetext">We make stuff. Take a look.</div>
+
+      </span>
+      <embed class="white-arrow text-center" src="img/white-arrow.svg" type="">
       <div class="headslide headslide2 black">
-      <div class="vcenteroffset2">
-        <div class="whitetext freight-h2">We're Nearabout</div>
+      <div class="vcenter headslide-text">
+        <div class="whitetext freight-h2">We're <span class="nearabout-accent">Nearabout</span></div>
+        <div class="whitetext proxima-h3">A fun, super cool deisgn firm that wants to make money so we don't have to deliver sandwiches to yuppies in the Finance District in San Francisco.</div>
+        </div>
+      </div>
+      <div class="headslide-mobile black">
+      <div class="">
+        <div class="whitetext freight-h2">We're <span class="nearabout-accent">Nearabout</span></div>
         <div class="whitetext proxima-h3">A fun, super cool deisgn firm that wants to make money so we don't have to deliver sandwiches to yuppies in the Finance District in San Francisco.</div>
         </div>
       </div>
       </div>
+
     </div>
     <div id="trigger3"></div>
     <div class="row work-row center-block">
       <div class="freight-h1 text-center work-row-text">Recent Work</div>
-      <div class="col-xs-12 col-md-4 red work-button"></div>
-      <div class="col-xs-12 col-md-4 red work-button"></div>
-      <div class="col-xs-12 col-md-4 red work-button"></div>
-      <div class="col-xs-12 red center-block view-work-button clear">
-        <div class="proxima-h4 text-center vcenter">View our work -></div>
-      </div>
+        <div class="button-pad col-xs-12 col-md-4">
+          <a href="work/thingiverse.html">
+            <div class="thingiverse-button work-box">
+              <span class="project-info">
+                <div class="proxima-h3">Thingiverse</div>
+                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+              </span>
+            </div>
+          </a>
+        </div> 
+        <div class="button-pad col-xs-12 col-md-4">
+          <a href="work/thingiverse.html">
+            <div class="jid-button work-box">
+              <span class="project-info">
+                <div class="proxima-h3">Jacobson Interior</div>
+                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+              </span>
+            </div>
+          </a>
+        </div> 
+        <div class="button-pad col-xs-12 col-md-4">
+          <a href="work/thingiverse.html">
+            <div class="jid-button work-box">
+              <span class="project-info">
+                <div class="proxima-h3">Jet City Gardens</div>
+                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+              </span>
+            </div>
+          </a>
+        </div> 
+      <a class="no-underline" href="./work.html"><div class="col-xs-12 center-block view-work-button clear easeall">
+          <div class="view-work-text proxima-h3 text-center vcenter whitetext">View our work ></div>
+        </div></a>
     </div>
-    <div class="row what-we-do centerblock red">
+    <div class="row what-we-do centerblock">
       <div class="col-xs-12 services-pic"></div>
       <div class="col-xs-12 services-container">
         <div class="freight-h1 text-center whitetext what-we-do-text">What we do</div>
-        <div class="col-xs-6 col-md-4 service">
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
+          <div class="freight-h2">Web Sites</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
+          <div class="freight-h2">Branding</div>
+          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
           <div class="freight-h2">Illustration</div>
           <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
         </div>
-        <div class="col-xs-6 col-md-4 service">
-          <div class="freight-h2">Illustration</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
+          <div class="freight-h2">Photography</div>
           <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
         </div>
-        <div class="col-xs-6 col-md-4 service">
-          <div class="freight-h2">Illustration</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
+          <div class="freight-h2">Copywriting</div>
           <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
         </div>
-        <div class="col-xs-6 col-md-4 service">
-          <div class="freight-h2">Illustration</div>
-          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
-        </div>
-        <div class="col-xs-6 col-md-4 service">
-          <div class="freight-h2">Illustration</div>
-          <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
-        </div>
-        <div class="col-xs-6 col-md-4 service">
-          <div class="freight-h2">Illustration</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 service">
+          <div class="freight-h2">Packaging</div>
           <div class="proxima-h4">We love a good animation or infographic and work to incorporate interesting visuals into every project we work on</div>
         </div>
       </div>
@@ -116,14 +226,14 @@
     <footer class="row">
       <div class="col-xs-6">
         <div class="proxima-h4"><a href="tel:1-425-591-5017">425-591-5017</a></div>
-        <div class="proxima-h4"><a href="hello@nearabout.com">hello@nearabout.com</a></div>
-        <div class="">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </div>
+        <div class="proxima-h4"><a href="mailto:Hello@nearabout.org" target="_top">hello@nearabout.org</div>
       </div>
       <div class="col-xs-6">
-        <div class="proxima-h4 pull-right">c) nearabout 2017</div>
+        <div class="pull-right">
+          <a href="instagram.com/nearaboutcreative"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="facebook.com/nearaboutcreative"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="proxima-h4 pull-right clear">&#169; nearabout 2017</div>
       </div>
     </footer>
     <br>
@@ -137,175 +247,112 @@
     var controller = new ScrollMagic.Controller();
   </script>
     <section class="demo">
-<!--       <script>
-      $( document ).ready(function() {
-       $(window).resize(function() {
-        alert("Hello! I am an alert box!!");
-          var pageWidth = $(window).width(); 
-          alert("Hello! I am an alert box!!");
 
-          if( $(window).width()< 681){
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%"}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-              
-              
-              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                      .setPin("#pin1")
-                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-          } else {
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-              
-              
-              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                      .setPin("#pin1")
-                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-            }
-        });
-      });
-      </script> -->
-
-<!--       <script>
-        
-        $(function () {
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger3"
-                })
-                .setTween(".swap a", 1, {color:'#000'}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-                });
-      </script> -->
 <script>
-  $(document).ready(function(){            
+console.clear();
+var controller = new ScrollMagic.Controller();
+      //animations for desktop
+      var divSlide = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0, bottom:0, opacity:1})
+              .addTo(controller);
 
-      $(window).on('resize', function(){ 
+      var textMove = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"13vw"})
+              .addTo(controller);
+      var arrowMove = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".white-arrow", 1, {ease: Power3.easeInOut, left:"35%"})
+              .addTo(controller);
 
-         var vpwidth=$(window).width(); // get the new value after resize
-         if(vpwidth > 768) {
-                var scene = new ScrollMagic.Scene({
-                          triggerElement: "#trigger1"
-                        })
-                        .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0, bottom:0}) // trigger a TweenMax.to tween
-                        // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                        .addTo(controller);
+      var textFade = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".headslide-text", 1, {ease: Power1.easeInOut, opacity:1})
+              .addTo(controller);
 
-                var scene = new ScrollMagic.Scene({
-                          triggerElement: "#trigger1"
-                        })
-                        .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"auto"}) // trigger a TweenMax.to tween
-                        // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                        .addTo(controller);
-                
-                
-                var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                        .setPin("#pin1")
-                        // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                        .addTo(controller);
+      var subtextMove = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".subheader-text", 1, {ease: Power3.easeInOut, width:"70%"})
+              .addTo(controller);
+
+      var bgMove = new ScrollMagic.Scene({
+                triggerElement: "#trigger1"
+              })
+              .setTween(".header-content", 1, {ease: Power3.easeInOut, backgroundPosition:"30% center"})
+              .addTo(controller);
+      
+      
+      var desktopPin = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+              .setPin("#pin1")
+              .addTo(controller);
+
+      // var backgroundMove = new ScrollMagic.Scene({
+      //           triggerElement: "#trigger1"
+      //         })
+      //         .setTween(".header-content", 1, {ease: Power3.easeInOut, "background-position":"50% 1%"})
+      //         .addTo(controller);
 
 
-          } else if (vpwidth < 768) {
+      //animations for mobile
+      // var divSlidemobile = new ScrollMagic.Scene({
+      //           triggerElement: "#trigger1"
+      //         })
+      //         .setTween(".headslide-mobile", 1, {ease: Expo.easeInOut, top:"53vh"})
+      //         .addTo(controller);
 
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".headslide", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
+      // var textMovemobile = new ScrollMagic.Scene({
+      //           triggerElement: "#trigger1"
+      //         })
+      //         .setTween(".header-text", 1, {ease: Power3.easeInOut, height:""})
+      //         .addTo(controller);
+      
+      
+      // var divSlideeemobile = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
+      //         .setPin("#pin1")
+      //         .addTo(controller);
 
-              var scene = new ScrollMagic.Scene({
-                        triggerElement: "#trigger1"
-                      })
-                      .setTween(".header-text", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
-                      // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-              
-              
-              var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                      .setPin("#pin1")
-                      // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                      .addTo(controller);
-          }
 
-      }).resize();
 
-  });
-</script>
-<!-- <script>
-  var mediaQuery = window.matchMedia("(max-width: 768px)");
-  mediaQuery.addListener(setAnimation);
 
-  // First run
-  setAnimation(mediaQuery);
-
-  function setAnimation(mediaQuery) {
-    if (mediaQuery.matches) {
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".headslide", 1, {ease: Expo.easeInOut, right:0, bottom:0}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-
-        var scene = new ScrollMagic.Scene({
-                  triggerElement: "#trigger1"
-                })
-                .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"auto"}) // trigger a TweenMax.to tween
-                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-        
-        
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                .setPin("#pin1")
-                // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                .addTo(controller);
-    } else {
-          var scene = new ScrollMagic.Scene({
-                    triggerElement: "#trigger1"
-                  })
-                  .setTween(".headslide2", 1, {ease: Expo.easeInOut, bottom:0}) // trigger a TweenMax.to tween
-                  // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                  .addTo(controller);
-
-          var scene = new ScrollMagic.Scene({
-                    triggerElement: "#trigger1"
-                  })
-                  .setTween(".header-text2", 1, {ease: Power3.easeInOut, height:"80%"}) // trigger a TweenMax.to tween
-                  // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-                  .addTo(controller);
-          
-          
-          var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300})
-                  .setPin("#pin1")
-                  // .addIndicators({name: "1 (duration: 100)"}) // add indicators (requires plugin)
-                  .addTo(controller);
-    }
+function sizeAll() {
+  var w = window.innerWidth;
+  
+  if ( w < 1024) {
+    divSlide.enabled(false);
+    textMove.enabled(false);
+    subtextMove.enabled(false);
+    bgMove.enabled(false);
+    desktopPin.enabled(false);
+    divSlidemobile.enabled(false);
+    textMovemobile.enabled(false);
+  } else {
+    divSlide.enabled(true);
+    textMove.enabled(true);
+    subtextMove.enabled(true);
+    desktopPin.enabled(true);
+    textFade.enabled(true);
+    bgMove.enabled(true);
+    backgroundMove.enabled(true);
+    divSlidemobile.enabled(false);
+    textMovemobile.enabled(false);
+    
   }
-</script> -->
+
+}
+
+$(window).resize(sizeAll);
+sizeAll();
+</script>
+
+<script>
+TweenMax.set($('body'), {className: '-=loading'});
+</script>
     </section>
 
 

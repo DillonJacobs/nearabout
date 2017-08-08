@@ -1,20 +1,118 @@
 
+@media (min-width: 800px) {
+  #nav-icon4{
+    display: none;
+  }
+}
+/* small breakpoint*/
+@media (max-width: 991px) {
+  .bio {
+      height: 80vw;
+  }
+  .bio-hover{
+    display: none;
+  }
+  .bio {
+      padding: 0 0px 0 0px;
+      width:80vw;
+      height:70vw;
+      max-width:600px;
+      max-height:550px;
+  }
+  .mobile-bio{
+    display: block;
+    margin-bottom:50px;
+    width:80vw;
+    max-width:600px;
+  }
+}
+/* small breakpoint*/
+@media (max-width: 767px) {
+  .mobile-header-text{
+    top:36%;
+  }
+
+  /*.headslide-mobile{
+    height: 18vh;
+    min-height: 166px;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    padding: 5vh 28px 0 32px;
+  }*/
+
+  .freight-h1{
+    font-size:45px;
+  }
+
+  .freight-h2{
+  font-size:22px
+  }
+
+  .button-pad{
+    padding:20px 0 20px 0;
+  }
+
+  .service{
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+  .about-us{
+    top:0px;
+      padding: 10% 8% 10% 8%;
+  }
+
+  
+  
+  
+  .meet-the-crew-row {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 30px;
+      padding-right: 30px;
+}
+.what-we-do-text {
+    top: -42px;
+    }
+
+    .header-content{
+      background-position: center center;
+}}
+@media (max-width: 1024px) {
+  .header-text{
+    width:100%!important;
+  }
+
+  .headslide-mobile{
+    display: block;
+  }
+
+  .headslide{
+  display:none}
+}
 
 
-@media (max-width: 800px) {
-  /* basics */
 
+  @media (max-width: 991px) {
+    .work-box{
+      height:90vw;
+    }
 
-  /* fonts */
+    .services-container{
+      padding-right:20px;
+      padding-left:20px;  
+    }
+}
 
+@media (max-width: 767px) {
+  .top, .bottom, .left, .right{
+    height:20px;
+  }
 
   .proxima-h1{
     font-size: 60pt;
   }
-
-
-  /* general styles and helpers */
-
 
   .wrapper{
     margin: 20px 0 0 0;
@@ -35,16 +133,14 @@
     z-index: 1000;
   }
 
-  /* bootstrap fixes/changes */ 
+  .menu-row{
+    margin-left:30px;
+    top:10px;
+  }
 
-
-
-  /* menu */ 
-
-
-
-
-  /* header */
+  ul.menu{
+    display:none;
+  }
 
   .headslide{
     height:90vh!important;
@@ -56,35 +152,65 @@
     padding: 20vh 20px 0 20px;
   }
 
+  .work-row {
+      background-color: white;
+    }
+  
+  .typography-text{
+    padding-left:15px;
+    padding-right:15px;
+  }
 
-  /*homepage work section*/
+  .type-section{
+    padding-left:15px;
+  }
 
+  .typography{
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:20px;
+  }
 
+  .pad-right-15{
+    padding-right:0px;
+  }
 
-  /* footer */
+  .pad-left-15{
+    padding-left:0px;
+  }
+
+  .pad-top-bot-30{
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+
+  #pin1{
+    top:10px!important;
+  }
 }
+/* border break point #2*/
+@media (max-width: 600px) {
+  .menu-row{
+    margin-left:20px;
+    top:0px;
+
+  }
+
+  .top, .bottom, .left, .right{
+      height:10px;
+    }
+  .wrapper{
+      margin: 10px 0 0 0;
+      padding: 0 10px 0 10px;
+    }
+    .work-row {
+
+padding:0px;
+  }
 
 
 /* mobile styles for header animation */
 
-
-@media (max-width: 768px) {
-
-  .headslide{
-    height:47vh;
-    width:100vw;
-    position: absolute;
-    bottom:-500px;
-    right:0;
-    left:0;
-    z-index: 10;
-    background-color: black;
-    padding: 12vh 50px 0 50px;
-  }
-  .header-text{
-    width:100%!important;
-  }
-}
 
 
 

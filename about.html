@@ -3,22 +3,37 @@
 <head>
   <title>Nearabout Design</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nearabout is a full service Design studio specializing in all things digital">
   <meta name="author" content="Dillon Jacobson & Maty Veitas">
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/ScrollMagic.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="js/scripts.js"></script>   
+  <script src="js/scripts2.js"></script> 
+  <script type="text/javascript" src="js/animation.gsap.js"></script>      
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
 </head>
-<body>
+<body class="about-page">
   <div class="menu-row">
-  <a href="index.html"><img class="nearabout-logo" src="img/nearabout-logo.svg" alt=""></a>
+  <a href="index.html"><img class="nearabout-logo easeall" src="img/nearabout-logo.svg" alt=""></a>
   <ul class="menu">
     <li class="proxima-h4 swap"><a href="index.html">Home</a></li>
     <li class="proxima-h4"><a href="work.html">Work</a></li>
@@ -27,43 +42,62 @@
   </ul>
   </div>
 <div class="wrapper">
-  <div class="row about-header red">
-      <div class="proxima-h2 text-center vcenter">What is Nearabout all about?</div>
+
+  <div class="row about-header">
+      <div class="proxima-h2_1 text-center vcenter">What is Nearabout all about?</div>
   </div>
-  <div class="row about-us-row">
-    <div class="studio-pic col-xs-12 col-md-7 red"></div>
-    <div class="about-us col-xs-6 col-md-6 black pull-right">
-      <div class="freight-h2 pink-text">We believe that design is about more than just looks.</div>
-      <div class="proxima-h3 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimus.</div>
+
+
+  <div class="row about-us-row clearfix">
+    <div class="studio-pic col-xs-12 col-sm-7"></div>
+      <div class="about-us col-xs-12 col-sm-7 black pull-right clearfix vcenter">
+        <div class="freight-h2 pink-text about-us-header">We believe that design is about more than just looks.</div>
+        <div class="proxima-h3 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimusLorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimus.</div>
+      </div>
     </div>
   </div>
+  
 
   <div class="text-center freight-h1 pink-text meet-the-crew-text">Meet the crew</div>
   <div class="row meet-the-crew-row">
   
   
-    <div class="bio col-xs-12 col-md-4">
+    <div class="bio col-md-4 center-block">
       <div class="bio-hover">
         <div class="freight-h2 pink-text">Ellen Pong</div>
         <div class="proxima-h3 whitetext">Design Director</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
     </div>
+    <div class=" mobile-bio center-block">
+      <div class="freight-h2 pink-text">Ellen Pong</div>
+      <div class="proxima-h3 whitetext">Design Director</div>
+      <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
+    </div>
   
-    <div class="bio col-xs-12 col-md-4">
+    <div class="bio  col-md-4 center-block">
       <div class="bio-hover">
         <div class="freight-h2 pink-text">Dillon Jacobson</div>
         <div class="proxima-h3 whitetext">Design Director</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
     </div>
-  
-    <div class="bio col-xs-12 col-md-4">
+    <div class=" mobile-bio center-block">
+      <div class="freight-h2 pink-text">Ellen Pong</div>
+      <div class="proxima-h3 whitetext">Design Director</div>
+      <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
+    </div>
+    <div class="bio  col-md-4 center-block">
       <div class="bio-hover">
         <div class="freight-h2 pink-text">Maty Veitas</div>
         <div class="proxima-h3 whitetext">Design Director</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
+    </div>
+    <div class="col-xs-12 mobile-bio center-block">
+      <div class="freight-h2 pink-text">Ellen Pong</div>
+      <div class="proxima-h3 whitetext">Design Director</div>
+      <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
     </div>
   </div>
   <footer class="row">
@@ -76,18 +110,10 @@
       <div class="proxima-h4 pull-right">c) nearabout 2017</div>
     </div>
   </footer>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <div class="left"></div>
   <div class="right"></div>
   <div class="top"></div>
-  <div class="bottom"></div>
+  <div id="aboutbottom" class="bottom"></div>
   <script src="js/scripts.js"></script>
 </div>
 </body>
