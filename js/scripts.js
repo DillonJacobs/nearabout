@@ -11,7 +11,8 @@ $(document).ready(function(){
             urlRegExp = new RegExp(url.replace(/\/$/,'') + "$");         
             $('.popup-content a').each(function(){
                 if(urlRegExp.test(this.href.replace(/\/$/,''))){
-                    $(".menu-type").css("color","#FABEAB");
+                    $(this).addClass('active');
+                    $(".active h1").css("color","#FABEAB");
                     $("#home-arrow").css("opacity",1);
                 }
             });
@@ -58,5 +59,7 @@ $(document).ready(function(){
 		          return false;
 		      });
 		      TweenMax.set($('body'), {className: '-=loading'});
+
 		  });
+		  $('#webTicker').webTicker();
 });

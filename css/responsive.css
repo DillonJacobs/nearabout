@@ -25,6 +25,21 @@
     width:80vw;
     max-width:600px;
   }
+  .about-us{
+    top:0px;
+      padding: 10% 8% 10% 8%;
+  width:100%;
+  }
+  .studio-pic{
+    width:100%;
+  }
+  .mobile-about-us{
+    display: block;
+  }
+  .about-us{
+    display: none;
+  }
+
 }
 /* small breakpoint*/
 @media (max-width: 767px) {
@@ -58,10 +73,7 @@
     padding-right:0px;
   }
 
-  .about-us{
-    top:0px;
-      padding: 10% 8% 10% 8%;
-  }
+
 
   
   
@@ -69,8 +81,6 @@
   .meet-the-crew-row {
       padding-top: 80px;
       padding-bottom: 80px;
-      padding-left: 30px;
-      padding-right: 30px;
 }
 .what-we-do-text {
     top: -42px;
@@ -78,7 +88,16 @@
 
     .header-content{
       background-position: center center;
-}}
+}
+
+  .header{
+    height:auto;
+  }
+
+.nearabout-logo {
+    width: 130px;
+    }
+  }
 @media (max-width: 1024px) {
   .header-text{
     width:100%!important;
@@ -90,18 +109,38 @@
 
   .headslide{
   display:none}
+  .header-content, .header {
+      height: 136vh;
+  }
+  .header-span{
+    top:30%;
+    }
+    .white-arrow{
+      top: 62vh;
+    }
 }
 
 
 
   @media (max-width: 991px) {
-    .work-box{
-      height:90vw;
-    }
+    
 
     .services-container{
       padding-right:20px;
       padding-left:20px;  
+    }
+    .button-pad{
+      margin-bottom:50px;
+    }
+    .type-section{
+      padding-left:30px;
+    }
+    .typography {
+        height: 100%;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -111,7 +150,12 @@
   }
 
   .proxima-h1{
-    font-size: 60pt;
+    font-size: 27vw;
+    line-height:27vw;
+    height:27vw;
+  }
+  .subheader-text{
+    bottom:-15px;
   }
 
   .wrapper{
@@ -134,7 +178,7 @@
   }
 
   .menu-row{
-    margin-left:30px;
+    margin-left:10px;
     top:10px;
   }
 
@@ -161,14 +205,12 @@
     padding-right:15px;
   }
 
-  .type-section{
-    padding-left:15px;
-  }
+
 
   .typography{
     padding-left:15px;
     padding-right:15px;
-    padding-bottom:20px;
+    padding-bottom:40px;
   }
 
   .pad-right-15{
@@ -180,18 +222,85 @@
   }
 
   .pad-top-bot-30{
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:10px;
+    padding-bottom:0px;
+  }
+  .md-pad-top-bot-10{
+padding-top:10px;
+padding-bottom: 10px;
   }
 
   #pin1{
-    top:10px!important;
+    top:0px!important;
   }
+  #nav-icon4{ width:33px;
+  height:35px; }
+  #nav-icon4 span{
+    height:5px;
+  }
+  #nav-icon4 span:nth-child(2) {
+  top: 10px;}
+  #nav-icon4 span:nth-child(3) {
+  top: 20px;}
+  #nav-icon4.open span:nth-child(3){
+    top:21px;
+  }
+  .view-work-button {
+      bottom: -34px;
+    }
+    .what-we-do{
+      margin-top:100px;
+    }
+    .work-row {
+        padding: 0px 0px 40px 0px;
+        margin-top:55px;
+      }
+      .work-row-text {
+          top: 10px;
+        }
+  .header-span{
+    height:27vw;
+  }
+.mockup-row{
+  margin-top:20px;
+  margin-bottom:20px;
 }
+.colorscheme-row{
+  margin-top:20px;
+  margin-bottom:20px
+}
+.primary, .secondary{
+padding:0px;
+margin: 10px 0 10px 0;  
+}
+.thingiverse-mobile-type{
+  display: block;
+}
+.thingiverse-desktop-type{
+  display: none;
+}
+.jid-wireframe {
+    padding: 0px;
+}
+.jid-wireframe-row {
+    padding: 20px 10px 20px 10px;
+}
+.grotesque-h1 {
+    font-size: 30px;
+}
+
+.phone-tablet-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    }
+  div.jetcity-padwrap img:nth-child(1){
+    margin-bottom:20px;
+  }}
 /* border break point #2*/
 @media (max-width: 600px) {
   .menu-row{
-    margin-left:20px;
+    margin-left:10px;
     top:0px;
 
   }
@@ -207,9 +316,15 @@
 
 padding:0px;
   }
+  #nav-icon4 {
+      right: 20px;
+      top: 20px;
+    }
+  }
 
 
 /* mobile styles for header animation */
+
 
 
 

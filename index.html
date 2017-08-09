@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+  <!--metadata-->
   <title>Nearabout Creative</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
   <meta charset="utf-8">
@@ -8,12 +10,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nearabout is a full service Design studio specializing in all things digital">
   <meta name="author" content="Dillon Jacobson & Maty Veitas">
+
+  <!--stylesheets-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css"> 
   <link rel="stylesheet" href="css/responsive.css"> 
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> 
 
+<!--scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/ScrollMagic.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
@@ -41,19 +46,7 @@
     float:left;
   }
 
-  .header-text{
-    width:100%;
-    position: absolute;
-    text-align: center;
-    height:13vw!important;
-  }
-  .subheader-text{
-    width:100%;
-    position: absolute;
-    text-align: center;
-    bottom:-50px;
-    display: block;
-  }
+  
   body{
     font-sze:14px;
   }
@@ -62,9 +55,7 @@
    max-width:960px;
     margin:0 auto;
   }
-  .header-span{
-    height:13vw;
-  }
+
 .mar-left-80{
   padding-left:80px;
 }
@@ -73,26 +64,24 @@
 
 </style>
 </head>
-<body class="pink-select loading">
+<body class="pink-select loading wrapper">
+
 <div class="menu-row">
   <a href="index.html">
-  <img class="nearabout-logo" src="img/nearabout-logo.svg" alt="">
+    <img class="nearabout-logo" src="img/nearabout-logo.svg" alt="">
   </a>
-
-
- 
   <ul class="menu">
-    <li class="proxima-h4 swap">
-    <a href="index.html">Home</a>
+    <li class="proxima-h3 swap">
+      <a href="index.html">Home</a>
     </li>
-    <li class="proxima-h4">
-    <a href="work.html">Work</a>
+    <li class="proxima-h3">
+      <a href="work.html">Work</a>
     </li>
-    <li class="proxima-h4">
-    <a href="about.html">About</a>
+    <li class="proxima-h3">
+      <a href="about.html">About</a>
     </li>
-    <li class="proxima-h4">
-    <a href="contact.html">Contact</a>
+    <li class="proxima-h3">
+      <a href="contact.html">Contact</a>
     </li>
   </ul>
 </div>
@@ -104,40 +93,42 @@
 <div class="popup-container" id="popup1">
   <div class="popup-wrapper pop-up-button">
     <div class="popup-content vcenter">
-      <a href="index.html">
+      <a href="index.html" class="no-underline">
         <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Home</h1>
       </a>
-      <a href="work.html">
+      <a href="work.html" class="no-underline">
         <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="work-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type="">&nbsp;&nbsp;</span>Work</h1>
       </a>
-      <a id="popup2close" href="about.html">
+      <a id="popup2close" href="about.html" class="no-underline">
         <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;About</h1>
       </a>
-      <a href="contact.html">
+      <a href="contact.html" class="no-underline">
         <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Contact</h1>
       </a>
     </div>
   </div>
   <div class="vr center-block"></div>
   <div class="row menu-bottom ">
-    <div class="col-xs-6 bottom-col vcenter height black border-right">
+    <div class="col-xs-6 bottom-col vcenter black border-right">
       <div class="freight-h3 whitetext">We're listening to</div>
       <div class="proxima-h4 whitetext">Slob On My Knob<br>by Tear da Club Up Thugs</div>
     </div>
-    <div class="col-xs-6 bottom-col vcenter height black border-left">
+    <div class="col-xs-6 left-bottom-col bottom-col vcenter black border-left">
       <div class="freight-h3 whitetext">Did you know</div>
       <div class="proxima-h4 whitetext">Banannas are berries</div>
     </div>
   </div>
 </div>
+
+
   <div id="trigger1" class="trigger"></div>
-  <div id="pin1" class="wrapper sidepad">
+  <div id="pin1" class="">
     <div class="row header red">
     <div class="header-content">
 
     <span class="header-span vcenter center-block">
       <div class="proxima-h1 header-text header-text2 vcenter whitetext">Hello!</div>
-      <div class="proxima-h3 subheader-text header-text2 center-block whitetext">We make stuff. Take a look.</div>
+      <div class="proxima-h3 subheader-text header-text2 center-block whitetext">Howdy. How are ya?</div>
 
       </span>
       <embed class="white-arrow text-center" src="img/white-arrow.svg" type="">
@@ -159,36 +150,47 @@
     <div id="trigger3"></div>
     <div class="row work-row center-block">
       <div class="freight-h1 text-center work-row-text">Recent Work</div>
+        
+
         <div class="button-pad col-xs-12 col-md-4">
           <a href="work/thingiverse.html">
             <div class="thingiverse-button work-box">
-              <span class="project-info">
-                <div class="proxima-h3">Thingiverse</div>
-                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
-              </span>
+              <img class="width100 inner-button" src="img/buttons/thingiverse-button.jpg" alt="">
             </div>
           </a>
+          <span class="project-info">
+            <div class="proxima-h3">Thingiverse</div>
+            <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+          </span>
         </div> 
+
+
         <div class="button-pad col-xs-12 col-md-4">
           <a href="work/thingiverse.html">
             <div class="jid-button work-box">
-              <span class="project-info">
-                <div class="proxima-h3">Jacobson Interior</div>
-                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
-              </span>
+              <img class="width100 inner-button" src="img/buttons/jid-button.jpg" alt="">
             </div>
           </a>
-        </div> 
+          <span class="project-info">
+            <div class="proxima-h3">Jacobson Interior</div>
+            <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+          </span>
+        </div>
+
+
         <div class="button-pad col-xs-12 col-md-4">
           <a href="work/thingiverse.html">
-            <div class="jid-button work-box">
-              <span class="project-info">
-                <div class="proxima-h3">Jet City Gardens</div>
-                <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
-              </span>
+            <div class="thingiverse-button work-box">
+              <img class="width100 inner-button" src="img/buttons/thingiverse-button.jpg" alt="">
             </div>
           </a>
-        </div> 
+          <span class="project-info">
+            <div class="proxima-h3">Jet City Gardens</div>
+            <div class="proxima-h4">Web Design / Branding / Ux / Development</div>
+          </span>
+        </div>
+
+
       <a class="no-underline" href="./work.html"><div class="col-xs-12 center-block view-work-button clear easeall">
           <div class="view-work-text proxima-h3 text-center vcenter whitetext">View our work ></div>
         </div></a>
@@ -261,7 +263,7 @@ var controller = new ScrollMagic.Controller();
       var textMove = new ScrollMagic.Scene({
                 triggerElement: "#trigger1"
               })
-              .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"13vw"})
+              .setTween(".header-text", 1, {ease: Power3.easeInOut, width:"70%", height:"16vw"})
               .addTo(controller);
       var arrowMove = new ScrollMagic.Scene({
                 triggerElement: "#trigger1"
@@ -329,6 +331,7 @@ function sizeAll() {
     subtextMove.enabled(false);
     bgMove.enabled(false);
     desktopPin.enabled(false);
+    arrowMove.enabled(false);
     divSlidemobile.enabled(false);
     textMovemobile.enabled(false);
   } else {

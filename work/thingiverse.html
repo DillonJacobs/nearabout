@@ -8,24 +8,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nearabout is a full service Design studio specializing in all things digital">
   <meta name="author" content="Dillon Jacobson & Maty Veitas">
+
+  <!--stylesheets-->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css"> 
-  <link rel="stylesheet" href="../css/responsive.css">    
+  <link rel="stylesheet" href="../css/responsive.css"> 
+  <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">  
+
+  <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="../js/scripts.js"></script>   
+    <script src="../js/scripts2.js"></script> 
+    <script type="text/javascript" src="../js/animation.gsap.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
 </head>
-<body class="thingiverse-page">
+<body class="thingiverse-page wrapper">
 
-<div class="wrapper">
+  <div class="menu-row">
+    <a href="index.html">
+      <img class="nearabout-logo" src="../img/nearabout-logo.svg" alt="">
+    </a>
+    <ul class="menu">
+      <li class="proxima-h4 swap">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="work.html">Work</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="about.html">About</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div id="nav-icon4">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="popup-container" id="popup1">
+    <div class="popup-wrapper pop-up-button">
+      <div class="popup-content vcenter">
+        <a href="../index.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Home</h1>
+        </a>
+        <a href="../work.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="work-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type="">&nbsp;&nbsp;</span>Work</h1>
+        </a>
+        <a id="po../pup2close" href="about.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;About</h1>
+        </a>
+        <a href="../contact.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Contact</h1>
+        </a>
+      </div>
+    </div>
+    <div class="vr center-block"></div>
+    <div class="row menu-bottom ">
+      <div class="col-xs-6 bottom-col vcenter black border-right">
+        <div class="freight-h3 whitetext">We're listening to</div>
+        <div class="proxima-h4 whitetext">Slob On My Knob<br>by Tear da Club Up Thugs</div>
+      </div>
+      <div class="col-xs-6 left-bottom-col bottom-col vcenter black border-left">
+        <div class="freight-h3 whitetext">Did you know</div>
+        <div class="proxima-h4 whitetext">Banannas are berries</div>
+      </div>
+    </div>
+  </div>
+
+<div class="">
   <div class="row">
     <div class="col-xs-12 centerblock project-header">
     
-      <div class="proxima-h2_1 text-center">Thingiverse</div>
-      <div class="proxima-h3 text-center center-block work-subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aliquid, labore. Aliquid enim, ut harum fugit asperiores rerum, consectetur eius veniam sapiente nihil quaerat.</div>
-      <div class="proxima-h3 thingiverse-accent text-center service-subhead">Branding / Web Design /  Web Development / UX</div>
+      <div class="proxima-h2_1 text-center project-h1">Thingiverse</div>
+      <div class="proxima-h3 text-center center-block work-subhead">Thingiverse is the worlds largest 3D printing resource, which allows users to upload, download, and edit ready-to-print files. This was a school project to take an existing brand and reconceptualize the brand, website, and user experience.</div>
+      <div class="proxima-h4 thingiverse-accent text-center service-subhead">Branding / Web Design /  Web Development / UX</div>
     
     </div>
   </div>
@@ -36,7 +102,7 @@
   </div>
 
   <div class="row mockup-row">
-    <div class="col-xs-12 col-md-10">
+    <div class="col-xs-12 col-md-10 center-block float-none">
       <img class="center-block width100" src="../img/thingiverse/thingiverse-mockups.jpg" alt="website renderings for desktop, mobile, and tablet devices">
     </div>
   </div>
@@ -56,14 +122,11 @@
     </div>
   </div> -->
 
-  <div class="row colorscheme-row">
-    <div class="col-xs-12">
-      <img class="center-block width80" src="../img/thingiverse/thingiverse-colorscheme.jpg" alt="primary color palette">
-    </div>
 
-<div class="row center-block">
-  s<div class="col-xs-12 col-md-6">
-    <div class="proxima-h2_1">Primary</div>
+
+<!-- <div class="row center-block colorscheme-row">
+  <div class="col-xs-12 col-md-6">
+    <div class="proxima-h3">Primary</div>
     <span class="swatch-span">
       <div class="color-swatch t-s1"></div>
       <div class="color-text proxima-h3">#e87c36</div>
@@ -79,7 +142,7 @@
     
   </div>
   <div class="col-xs-12 col-md-6">
-    <div class="proxima-h2_1">Secondary</div>
+    <div class="proxima-h3">Secondary</div>
     <span class="swatch-span">
       <div class="color-swatch t-s4"></div>
       <div class="color-text proxima-h3">#231f20</div>
@@ -94,17 +157,25 @@
     </span>
     
   </div>
+</div> -->
+<div class="row colorscheme-row">
+  <div class="col-xs-12 col-sm-6 primary"><img class="width100 center-block" src="../img/thingiverse/thingiverse-primary-colors.jpg" alt=""></div>
+  <div class="col-xs-12 col-sm-6 secondary"><img class="width100 center-block" src="../img/thingiverse/thingiverse-secondary-colors.jpg" alt=""></div>
 </div>
 
     <div class="row">
       <div class="col-xs-12">
         <img class="width100" src="../img/thingiverse/print-mockups.jpg" alt="primary color palette">
+        <img class="width100 thingiverse-desktop-type"  src="../img/thingiverse/typography-desktop.jpg" alt="primary color palette">
+        <div class="col-md-6"><img class="max-w-h thingiverse-mobile-type" src="../img/thingiverse/typography-1mobile.jpg" alt=""></div>
+        <div class="col-md-6"><img class="max-w-h thingiverse-mobile-type" src="../img/thingiverse/typography-2mobile.jpg" alt=""></div>
+
       </div>
       
     </div>
 
 
-    <div class="col-xs-12 type-box">
+<!--     <div class="col-xs-12 type-box">
       <div class="col-xs-12 col-md-6 left-type">
         <span class="pull-left thingiverse-left-type">
           <div class="proxima-h4 gray-text text-right">h1</div>
@@ -124,46 +195,53 @@
         <div class="typography-text proxima-h4 whitetext">We chose purista as the heading font, because of its geometric angles and legibility. We chose to title ellen the sucksack capital of eugene. the body font because of its clarity and simplicity.
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
-  <div class="proxima-h2_1 text-center visit-link">Visit <a class="thingiverse-accent" href="thingiverse.com">thingiverse</a></div>
+  <div class="proxima-h2_1 text-center visit-link">Visit <a class="thingiverse-accent underline" href="thingiverse.com">thingiverse</a></div>
 
 
-<<<<<<< HEAD
-  <ul class="pager">
-    <li><a href="/work/jetcity.html">Previous</a></li>
-    <li><a href="#">All</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-=======
+
   <div class="row col-xs-12">
-    <ul class="pager">
-      <div class="row col-xs-4 float-left">
-        <li><a href="../work/puget-sound-hospitality.html">Previous</a></li>
+    <a class="whitetext text-center" href="../work/puget-sound-hospitality.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
       </div>
-      <div class="row col-xs-4">
-        <li><a href="#">All</a></li>
+    </a>
+    <a class="whitetext text-center" href="../work.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-th" aria-hidden="true"></i>
       </div>
-      <div class="row col-xs-4 float-right">
-        <li><a href="../work/jacobson-interior-design.html">Next</a></li>
+    </a>
+    <a class="whitetext text-center" href="../work/jacobson-interior-design.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </div>
-    </ul>
+    </a>
   </div>
->>>>>>> 5e5da80205e101b961fb7b910f751e100a88c183
+
+
+  <div class="footer">
+    <div class="col-xs-6 vcenter">
+      <div class="proxima-h4"><a href="tel:1-425-591-5017">425-591-5017</a></div>
+      <div class="proxima-h4"><a href="mailto:Hello@nearabout.org" target="_top">hello@nearabout.org</div>
+    </div>
+    <div class="col-xs-6 vcenter">
+      <div class="pull-right">
+        <a href="instagram.com/nearaboutcreative"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="facebook.com/nearaboutcreative"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="proxima-h4 pull-right clear">&#169; nearabout 2017</div>
+    </div>
+  </div>
+  
+  <div class="left"></div>
+  <div class="right"></div>
+  <div class="top"></div>
+  <div class="bottom"></div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <script src="js/scripts.js"></script>
 </body>
 </html>

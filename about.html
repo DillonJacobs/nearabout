@@ -24,36 +24,103 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="js/scripts.js"></script>   
-  <script src="js/scripts2.js"></script> 
+  <script src="js/jquery.webticker.js"></script>  
   <script type="text/javascript" src="js/animation.gsap.js"></script>      
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
 </head>
-<body class="about-page">
+<body class="about-page wrapper">
+  
+
   <div class="menu-row">
-  <a href="index.html"><img class="nearabout-logo easeall" src="img/nearabout-logo.svg" alt=""></a>
-  <ul class="menu">
-    <li class="proxima-h4 swap"><a href="index.html">Home</a></li>
-    <li class="proxima-h4"><a href="work.html">Work</a></li>
-    <li class="proxima-h4"><a href="about.html">About</a></li>
-    <li class="proxima-h4"><a href="contact.html">Contact</a></li>
-  </ul>
+    <a href="index.html">
+      <img class="nearabout-logo" src="img/nearabout-logo.svg" alt="">
+    </a>
+    <ul class="menu">
+      <li class="proxima-h3 swap">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="proxima-h3">
+        <a href="work.html">Work</a>
+      </li>
+      <li class="proxima-h3">
+        <a href="about.html">About</a>
+      </li>
+      <li class="proxima-h3">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
   </div>
-<div class="wrapper">
+  <div id="nav-icon4">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="popup-container" id="popup1">
+    <div class="popup-wrapper pop-up-button">
+      <div class="popup-content vcenter">
+        <a href="index.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Home</h1>
+        </a>
+        <a href="work.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="work-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type="">&nbsp;&nbsp;</span>Work</h1>
+        </a>
+        <a id="popup2close" href="about.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;About</h1>
+        </a>
+        <a href="contact.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Contact</h1>
+        </a>
+      </div>
+    </div>
+    <div class="vr center-block"></div>
+    <div class="row menu-bottom ">
+      <div class="col-xs-6 bottom-col vcenter black border-right">
+        <div class="freight-h3 whitetext">We're listening to</div>
+        <div class="proxima-h4 whitetext">Slob On My Knob<br>by Tear da Club Up Thugs</div>
+      </div>
+      <div class="col-xs-6 left-bottom-col bottom-col vcenter black border-left">
+        <div class="freight-h3 whitetext">Did you know</div>
+        <div class="proxima-h4 whitetext">Banannas are berries</div>
+      </div>
+    </div>
+  </div>
 
-  <div class="row about-header">
-      <div class="proxima-h2_1 text-center vcenter">What is Nearabout all about?</div>
+<div class="">
+
+  <div class="row about-header" id="pin1" >
+      <div class="proxima-h2 text-center vcenter" id="what-were-about">What is Nearabout all about?</div><div class="pinkbg">
+      <div class="proxima-h2_1 text-center" id="what-were-about2">      Copywriting<br>
+      Photographt<br>
+      Refried Beans<br>
+      Horse Tranquilizer<br>
+      Intersectional Feminism<br>
+      Blackmailing<br>
+      Oranges<br>
+      Various Fruits<br>
+      Chopped Teen Tournoment<br>
+      Swiffer-ing<br>
+      Beer Bongs<br>
+      Fela Kuti<br></div>
+
+      </div>
+      
+
   </div>
 
 
-  <div class="row about-us-row clearfix">
+  <div class="row about-us-row">
     <div class="studio-pic col-xs-12 col-sm-7"></div>
-      <div class="about-us col-xs-12 col-sm-7 black pull-right clearfix vcenter">
+      <div class="about-us col-xs-12 col-sm-7 black pull-right vcenter">
         <div class="freight-h2 pink-text about-us-header">We believe that design is about more than just looks.</div>
         <div class="proxima-h3 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimusLorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimus.</div>
       </div>
+    </div>
+    <div class="col-xs-12 mobile-about-us black">
+      <div class="freight-h2 pink-text about-us-header">We believe that design is about more than just looks.</div>
+      <div class="proxima-h3 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimusLorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia, officiis iure suscipit rem dolorem fuga cupiditate obcaecati sequi, deleniti cum tempora ea commodi eum aspernatur, architecto eaque rerum possimus.</div>
     </div>
   </div>
   
@@ -64,41 +131,44 @@
   
     <div class="bio col-md-4 center-block">
       <div class="bio-hover">
+        <div class="freight-h2 pink-text">Dillon Jacobson</div>
+        <div class="proxima-h3 whitetext">Developer & Interactive Lead</div>
+        <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
+      </div>
+    </div>
+    <div class="mobile-bio center-block">
+      <div class="freight-h2 pink-text">Dillon Jacobson</div>
+      <div class="proxima-h3 whitetext">Developer & Interactive Lead</div>
+      <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
+    </div>
+  
+    <div class="bio col-md-4 center-block">
+      <div class="bio-hover">
         <div class="freight-h2 pink-text">Ellen Pong</div>
         <div class="proxima-h3 whitetext">Design Director</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
     </div>
-    <div class=" mobile-bio center-block">
+    <div class="mobile-bio center-block">
       <div class="freight-h2 pink-text">Ellen Pong</div>
       <div class="proxima-h3 whitetext">Design Director</div>
       <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
     </div>
-  
-    <div class="bio  col-md-4 center-block">
-      <div class="bio-hover">
-        <div class="freight-h2 pink-text">Dillon Jacobson</div>
-        <div class="proxima-h3 whitetext">Design Director</div>
-        <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
-      </div>
-    </div>
-    <div class=" mobile-bio center-block">
-      <div class="freight-h2 pink-text">Ellen Pong</div>
-      <div class="proxima-h3 whitetext">Design Director</div>
-      <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
-    </div>
-    <div class="bio  col-md-4 center-block">
+
+    <div class="bio col-md-4 center-block">
       <div class="bio-hover">
         <div class="freight-h2 pink-text">Maty Veitas</div>
-        <div class="proxima-h3 whitetext">Design Director</div>
+        <div class="proxima-h3 whitetext">Intern</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
     </div>
-    <div class="col-xs-12 mobile-bio center-block">
-      <div class="freight-h2 pink-text">Ellen Pong</div>
-      <div class="proxima-h3 whitetext">Design Director</div>
+
+    <div class="mobile-bio center-block">
+      <div class="freight-h2 pink-text">Maty Veitas</div>
+      <div class="proxima-h3 whitetext">Intern</div>
       <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
     </div>
+
   </div>
   <footer class="row">
     <div class="col-xs-6">
@@ -113,8 +183,70 @@
   <div class="left"></div>
   <div class="right"></div>
   <div class="top"></div>
-  <div id="aboutbottom" class="bottom"></div>
-  <script src="js/scripts.js"></script>
+  <div class="bottom"></div>
+  <div class="bottom bottom-40"></div>
+  <div class="bottom info-slider">
+    
+      <ul id="webTicker" class="proxima-h4 slider-content">
+        <li>WELCOME TO THE NEARABOUT WEBSITE!</li>
+        <li>DID YOU KNOW BANANNAS ARE BERRIES?</li>
+        <li>SO IS CORN.</li>
+        <li>I'M TRYING TO THINK OF WHAT TO MAKE FOR DINNER.</li>
+        <li>DEFINITELY THINKING ABOUT SLOPPY JOES.</li>
+        <li>DO YOU LISTEN TO KOOL KEITH?</li>
+        <li>IT'S OKAY IF YOU DON'T.</li>
+        <li>THE HAWAIAN ALPHABET ONLY HAS 13 LETTERS.</li>
+        <li>THANKS FOR READING THIS STUFF.</li>
+      </ul>
+  </div>
 </div>
+<script>
+console.clear();
+var controller = new ScrollMagic.Controller();
+      //animations for de
+      var desktopPin = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 3000})
+              .setPin("#pin1")
+              .addTo(controller);
+
+
+
+
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
+              // animate color and top border in relation to scroll position
+              .setTween("#what-were-about", {top:80}) // the tween durtion can be omitted and defaults to 1
+              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
+              // animate color and top border in relation to scroll position
+              .setTween("#what-were-about2", {top:200}) // the tween durtion can be omitted and defaults to 1
+              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
+              // animate color and top border in relation to scroll position
+              .setTween(".pinkbg", {opacity:1}) // the tween durtion can be omitted and defaults to 1
+              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+
+
+
+
+function sizeAll() {
+  var w = window.innerWidth;
+  
+  if ( w < 1024) {
+    desktopPin.enabled(false);
+  } else {
+    desktopPin.enabled(true)
+    
+  }
+
+}
+
+$(window).resize(sizeAll);
+sizeAll();
+</script>
 </body>
 </html>
