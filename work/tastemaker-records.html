@@ -1,37 +1,186 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Nearabout Design</title>
-  <link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nearabout is a full service Design studio specializing in all things digital">
-  <meta name="author" content="Dillon Jacobson & Maty Veitas">
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">    
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+<title>Tastemaker Records - Nearabout Creative</title>
+<link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nearabout is a full service Design studio specializing in all things digital">
+<meta name="author" content="Dillon Jacobson & Maty Veitas">
 
+<!--stylesheets-->
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/styles.css"> 
+<link rel="stylesheet" href="../css/responsive.css"> 
+<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">  
+
+<!--scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/ScrollMagic.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="../js/scripts.js"></script>   
+  <script src="../js/scripts2.js"></script> 
+  <script type="text/javascript" src="../js/animation.gsap.js"></script>
 </head>
-<body class="tastemaker-page">
+<body class="tastemaker-page wrapper">
 
-<div class="row col-xs-12">
-    <ul class="pager">
-      <div class="row col-xs-4 float-left">
-        <li><a href="../work/tavern12.html">Previous</a></li>
-      </div>
-      <div class="row col-xs-4">
-        <li><a href="#">All</a></li>
-      </div>
-      <div class="row col-xs-4 float-right">
-        <li><a href="../work/puget-sound-hospitality.html">Next</a></li>
-      </div>
+  <div class="menu-row">
+    <a href="index.html">
+      <img class="nearabout-logo" src="../img/nearabout-logo.svg" alt="">
+    </a>
+    <ul class="menu">
+      <li class="proxima-h4 swap">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="../work.html">Work</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="../about.html">About</a>
+      </li>
+      <li class="proxima-h4">
+        <a href="../contact.html">Contact</a>
+      </li>
     </ul>
   </div>
+  <div id="nav-icon4">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="popup-container" id="popup1">
+    <div class="popup-wrapper pop-up-button">
+      <div class="popup-content vcenter">
+        <a href="../index.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Home</h1>
+        </a>
+        <a href="../work.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="work-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type="">&nbsp;&nbsp;</span>Work</h1>
+        </a>
+        <a id="po../pup2close" href="about.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;About</h1>
+        </a>
+        <a href="../contact.html" class="no-underline">
+          <h1 class="menu-type max-h-10vh proxima-h2_2"><span><embed id="home-arrow" class="mobile-menu-arrow vcenter" src="../img/pink-arrow.svg" type=""></span>&nbsp;&nbsp;Contact</h1>
+        </a>
+      </div>
+    </div>
+    <div class="vr center-block"></div>
+    <div class="row menu-bottom ">
+      <div class="col-xs-6 bottom-col vcenter black border-right">
+        <div class="freight-h3 whitetext">We're listening to</div>
+        <div class="proxima-h4 whitetext">Slob On My Knob<br>by Tear da Club Up Thugs</div>
+      </div>
+      <div class="col-xs-6 left-bottom-col bottom-col vcenter black border-left">
+        <div class="freight-h3 whitetext">Did you know</div>
+        <div class="proxima-h4 whitetext">Banannas are berries</div>
+      </div>
+    </div>
+  </div>
 
-<script src="js/scripts.js"></script>
+<div class="">
+  <div class="row">
+    <div class="col-xs-12 centerblock project-header">
+      <div class="proxima-h2_1 text-center project-h1">Tastemaker Records</div>
+      <div class="proxima-h3 text-center center-block work-subhead">Tastemaker Records gives producers, artists, and journalists a platform to showcase their content. We created a custom site for them to show their unique style. We focused on cleanliness and animations.</div>
+      <div class="proxima-h4 tastemaker-accent text-center service-subhead">Branding / Web Design /  Web Development / UX</div>
+    </div>
+  </div>
+
+<div class="row tastemaker-mockup-row">
+  <div class="col-xs-12 col-md-10 center-block float-none">
+    <img class="max-w-h" src="../img/tastemaker-records/imac-macbook-mockup.jpg" alt="">
+  </div>
+</div>
+
+<div class="row tastemaker-sitemap-row tastemaker-bgc">
+  <div class="col-xs-12 col-md-12 center-block">
+    <img class="max-w-h center-block" src="../img/tastemaker-records/tastemaker-sitemap.jpg" alt="">
+  </div>
+</div>
+
+<div class="row tastemaker-wireframe-row">
+  <div class="col-xs-12 col-12-6">
+    <img class="max-w-h" src="../img/tastemaker-records/tastemaker-wireframes.jpg" alt="">
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <img src="../img/tastemaker-records/" alt="">
+  </div>
+</div>
+
+<div class="row tablet-mockup-row">
+  <div class="col-xs-12">
+    <img class="max-w-h" src="../img/tastemaker-records/phone-tablet-on-photo.jpg" alt="">
+  </div>
+  <div class="row typography-area tastemaker-bgc">
+    <div class="col-xs-12 col-md-6 row typo-stack black">
+      <div class="typo-stack1">
+      <div class="proxima-h4 gray-text mini-text">Web</div>
+        <span class="hey">
+          <div class="type-section pad-left-90 futura-h1 whitetext">Futura Regular</div>
+          <div class="type-section pad-left-90 futura-h2 whitetext">ABCDEFGHIJKLMNOPQRSTUVWYXYZ</div>
+          <div class="type-section pad-left-90 futura-h2 whitetext">abcdefghijklmnopqrstuvwyxyz</div>
+          <div class="type-section pad-left-90 futura-h2 whitetext">1234567890</div>
+        </span>
+      </div>
+      
+    </div>
+
+    <div class="col-xs-12 col-md-6 pull-right typography">
+      <div class="proxima-h3 typography-text">Typography</div>
+      <br>
+      <div class="typography-text proxima-h4">We chose purista as the heading font, because of its geometric angles and legibility. We chose to title ellen the sucksack capital of eugene. the body font because of its clarity and simplicity.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="proxima-h2_1 text-center visit-link">
+    Visit <a class="tastemaker-accent" href="http://www.tastemaker.us">tastemaker.us</a>
+  </div>
+
+
+  <div class="row col-xs-12">
+    <a class="whitetext text-center" href="../work/thingiverse.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+      </div>
+    </a>
+    <a class="whitetext text-center" href="../work.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-th" aria-hidden="true"></i>
+      </div>
+    </a>
+    <a class="whitetext text-center" href="../work/jet-city-gardens.html">
+      <div class="col-xs-4 work-nav">
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <div class="col-xs-6 vcenter">
+      <div class="proxima-h4"><a href="tel:1-425-591-5017">425-591-5017</a></div>
+      <div class="proxima-h4"><a href="mailto:Hello@nearabout.org" target="_top">hello@nearabout.org</div>
+    </div>
+    <div class="col-xs-6 vcenter">
+      <div class="pull-right">
+        <a href="instagram.com/nearaboutcreative"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="facebook.com/nearaboutcreative"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="proxima-h4 pull-right clear">&#169; nearabout 2017</div>
+    </div>
+  </div>
+
+  <div class="left"></div>
+  <div class="right"></div>
+  <div class="top"></div>
+  <div class="bottom"></div>
 </body>
 </html>

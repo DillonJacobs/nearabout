@@ -31,7 +31,7 @@
   <![endif]-->
 
 </head>
-<body class="about-page wrapper">
+<body class="about-page wrapper loading">
   
 
   <div class="menu-row">
@@ -92,7 +92,8 @@
 
   <div class="row about-header" id="pin1" >
       <div class="proxima-h2 text-center vcenter" id="what-were-about">What is Nearabout all about?</div><div class="pinkbg">
-      <div class="proxima-h2_1 text-center" id="what-were-about2">      Copywriting<br>
+      </div><div class="proxima-h2_1 text-center" id="what-were-about2">
+      Copywriting<br>
       Photographt<br>
       Refried Beans<br>
       Horse Tranquilizer<br>
@@ -105,7 +106,7 @@
       Beer Bongs<br>
       Fela Kuti<br></div>
 
-      </div>
+      
       
 
   </div>
@@ -202,9 +203,11 @@
 </div>
 <script>
 console.clear();
+TweenMax.set($('body'), {className: '-=loading'});
+
 var controller = new ScrollMagic.Controller();
       //animations for de
-      var desktopPin = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 3000})
+      var desktopPin = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 2200})
               .setPin("#pin1")
               .addTo(controller);
 
@@ -213,21 +216,23 @@ var controller = new ScrollMagic.Controller();
 
       var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
               // animate color and top border in relation to scroll position
-              .setTween("#what-were-about", {top:80}) // the tween durtion can be omitted and defaults to 1
-              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .setTween("#what-were-about", {top:"10%", color:"black"}) // the tween durtion can be omitted and defaults to 1
+              // .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
+              // animate color and top border in relation to scroll position
+              .setTween(".pinkbg", {opacity:.95}) // the tween durtion can be omitted and defaults to 1
+              // .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
               .addTo(controller);
 
       var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
               // animate color and top border in relation to scroll position
-              .setTween("#what-were-about2", {top:200}) // the tween durtion can be omitted and defaults to 1
-              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+              .setTween("#what-were-about2", {top:"10%", opacity:1}) // the tween durtion can be omitted and defaults to 1
+              // .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
               .addTo(controller);
 
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 1800})
-              // animate color and top border in relation to scroll position
-              .setTween(".pinkbg", {opacity:1}) // the tween durtion can be omitted and defaults to 1
-              .addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
-              .addTo(controller);
 
 
 
@@ -248,5 +253,25 @@ function sizeAll() {
 $(window).resize(sizeAll);
 sizeAll();
 </script>
+<script>
+$(window).scroll(function (e) {
+var $top = $(window).scrollTop(); // how many pixels scrolled from top
+});
+</script>
+<!-- <script>
+  // build tween
+  var tween = new TimelineMax ()
+    .add([
+      TweenMax.fromTo(".about-us", 1,{top: -350, ease: Linear.easeNone}),
+    ]);
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $(window).width()})
+          .setTween(tween)
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+</script> -->
+
+
 </body>
 </html>

@@ -78,6 +78,12 @@ a:hover{
   font-weight:normal;
   font-style:normal;
 }
+@font-face{
+  font-family:'FuturaRegular';
+  src:url(../fonts/futuraLT.ttf);
+  font-weight:normal;
+  font-style:normal;
+}
 *{
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -438,6 +444,15 @@ div #nav-icon4.open{
   font-family: GrotesqueMtCondensed;
   font-size:40px;
 }
+.futura-h1{
+  font-family: FuturaRegular;
+  font-size:30px;
+}
+
+.futura-h2{
+  font-family: FuturaRegular;
+  font-size:20px;
+}
 
 
 
@@ -473,6 +488,9 @@ div #nav-icon4.open{
 
   .tastemaker-accent{
     color:#DB3E1F;
+  }
+  .tastemaker-bgc{
+    background-color:#DB3E1F;
   }
 
   .tavern12-accent{
@@ -942,8 +960,8 @@ span.close-text{
   left: 50%;
 }
 .white-arrow{
-    animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-duration: 1.2s;
+    animation-iteration-count: 2;
     animation-name: whitearrow;
   }
 @keyframes whitearrow {
@@ -953,7 +971,7 @@ span.close-text{
   }
   50% {
     opacity: 1;
-    transform: translate(0px, 10px);
+    transform: translate(0px, 20px);
   }
 }
 
@@ -1053,6 +1071,7 @@ clear:both;
        background-position: center center;
        -webkit-background-size: cover;
        background-color: #E5D4D1; 
+       overflow: hidden;
 }
 
 .about-ticker{
@@ -1099,6 +1118,7 @@ clear:both;
   background-clip: -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box;
+
 }
 
 .bio-hover{
@@ -1139,11 +1159,16 @@ color:#FABEAB;
 background-color: white;}
 #what-were-about{
   z-index:10000;
+  top:50%;
+  color:#FABEAB;
 }
 #what-were-about2{
   top:70%;
   position: relative;
+  color:#FABEAB;
+  opacity:0;
 }
+
 
 
 
@@ -1272,7 +1297,7 @@ background-color: white;}
 }
 
 .jetcity-button{
-  background-image: url("../img/buttons/jetcity-button.jpg");
+  background-image: url("../img/buttons/jetcity-hover-button.jpg");
 }
 
 .tavern12-button{
@@ -1446,6 +1471,14 @@ body.jetcity-page .typo-stack1 .type-section{
 
 body.jetcity-page .typo-stack2 .type-section{
   line-height:80px;
+}
+
+/* Tastemaker */
+.tastemaker-page .typo-stack1{
+height:250px;
+}
+.tastemaker-sitemap-row{
+  padding: 50px 0 50px 0
 }
 
 
