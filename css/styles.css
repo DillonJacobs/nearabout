@@ -152,6 +152,13 @@ html{
   bottom:60px;
 }
 
+
+@media (max-width: 767px){
+  .bottom{
+    display:none;
+  }
+}
+
 #nav-icon4{
   top:0px;
   right:40px;

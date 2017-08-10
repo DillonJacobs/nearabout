@@ -30,6 +30,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
+<style>
+
+@media (max-width: 640px){
+.scrollmagic-pin-spacer{
+display:none;
+}
+}
+</style>
+
 </head>
 <body class="about-page wrapper loading">
   
@@ -94,7 +103,7 @@
       <div class="proxima-h2 text-center vcenter" id="what-were-about">What is Nearabout all about?</div><div class="pinkbg">
       </div><div class="proxima-h2_1 text-center" id="what-were-about2">
       Copywriting<br>
-      Photographt<br>
+      Photography<br>
       Refried Beans<br>
       Horse Tranquilizer<br>
       Intersectional Feminism<br>
@@ -159,14 +168,14 @@
     <div class="bio col-md-4 center-block">
       <div class="bio-hover">
         <div class="freight-h2 pink-text">Maty Veitas</div>
-        <div class="proxima-h3 whitetext">Intern</div>
+        <div class="proxima-h3 whitetext">Client Aquisition & Development Assitant</div>
         <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
       </div>
     </div>
 
     <div class="mobile-bio center-block">
       <div class="freight-h2 pink-text">Maty Veitas</div>
-      <div class="proxima-h3 whitetext">Intern</div>
+      <div class="proxima-h3 whitetext">Client Aquisition & Development Assitant</div>
       <div class="proxima-h4 whitetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellendus molestias vero excepturi nesciunt voluptatum, architecto laborum praesentium alias eveniet ipsum at laudantium mollitia nam, vitae harum tempore quia. Atque?</div>
     </div>
 
@@ -185,7 +194,7 @@
   <div class="right"></div>
   <div class="top"></div>
   <div class="bottom"></div>
-  <div class="bottom bottom-40"></div>
+<!--   <div class="bottom bottom-40"></div> -->
   <div class="bottom info-slider">
     
       <ul id="webTicker" class="proxima-h4 slider-content">
@@ -238,16 +247,42 @@ var controller = new ScrollMagic.Controller();
 
 
 
+// function sizeAll() {
+//   var w = window.innerWidth;
+  
+//   if ( w < 1024) {
+//     desktopPin.enabled(false);
+//   } else {
+//     desktopPin.enabled(true)
+    
+//   }
+
+// }
+
+
 function sizeAll() {
   var w = window.innerWidth;
   
   if ( w < 1024) {
+    divSlide.enabled(false);
+    textMove.enabled(false);
+    subtextMove.enabled(false);
+    bgMove.enabled(false);
     desktopPin.enabled(false);
+    arrowMove.enabled(false);
+    divSlidemobile.enabled(false);
+    textMovemobile.enabled(false);
   } else {
-    desktopPin.enabled(true)
-    
-  }
-
+    divSlide.enabled(true);
+    textMove.enabled(true);
+    subtextMove.enabled(true);
+    desktopPin.enabled(true);
+    textFade.enabled(true);
+    bgMove.enabled(true);
+    backgroundMove.enabled(true);
+    divSlidemobile.enabled(false);
+    textMovemobile.enabled(false);
+    }
 }
 
 $(window).resize(sizeAll);
